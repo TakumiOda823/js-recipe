@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="display"></div>
+    <button id="button"></button>
+
+    <div id="bar"></div>
+    <button id="foo"></button>
+
+    <script>
+      const DISPLAY = document.getElementById("display")
+      const BUTTON = document.getElementById("button")
+      let count = 0
+
+      const BAR = document.getElementById("bar")
+      const FOO = document.getElementById("foo")
+
+      BUTTON.onclick = function() {
+        count = count + 1
+        DISPLAY.textContent = count
+      }
+
+      FOO.onclick = function() {
+        BAR.textContent = "ああああ"
+      }
+    </script>
+  </body>
+</html>
