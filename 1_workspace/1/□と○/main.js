@@ -1,6 +1,11 @@
 const figure = document.getElementById("figure")
 
-figure.onclick = function() {
+// figure.onclick = function() {
+//   figure.classList.toggle("rounded")
+// }
+
+//発展 マウスを上にオーバーしながら変更
+figure.onmousemove = function() {
   figure.classList.toggle("rounded")
 }
 
